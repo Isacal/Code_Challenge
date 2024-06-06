@@ -4,115 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Challenge</title>
-    <style>
-        body{
-            margin: 0px;
-            padding: 0px;
-            background-color: #262626;
-        }
-        .container{
-            display: flex;
-            padding: 0px;
-            width: 100%;
-            cursor:
-
-        }
-        .image1{
-            display: flex;
-            justify-content: space-around;
-            margin: 0px;
-        }
-        .image1 img{
-            width: 25%;
-            height: 550px;
-            margin: 0px;
-            padding: 0px;
-
-        }
-        .image1 img:hover{
-           border: 2px solid blue;
-
-        }
-        h5{
-            color:#999999;
-        }
-        /* zoomed image styles */
-        /* .zoomed_image{
-            width: 60%;
-            margin: 0px;
-            padding: 0px;
-
-        }
-        .img{
-            display: flex;
-            justify-content: space-around;
-            
-        }
-        .img img{
-            width: 25%;
-            height: 450px;
-            object-fit: cover;
-        } */
-       
-        .single_img{
-            display: grid;
-            position: relative;
-
-        }
-
-        p{
-            position: absolute;
-            color: white;
-            font-size: 50px;
-            font-weight: bold;
-            margin-top: -200px;
-        
-        }
-
-    </style>
 </head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: #262626;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .singleImg{
+        display: block;
+        width: 25%;
+        height: 550px;
+        position: relative
+    }
+    .singleImg img{
+        width: 100%;
+        position: relative;
+        height: 550px;
+        object-fit: cover;
+    }
+
+    .singleImg img:hover{
+        border: 2px solid blue;
+    }
+    .desc{
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px;
+        
+        }
+        p{
+            font-size: 20px;
+            color:  #e6e6e6;
+            margin: 20px;
+        }
+        @media screen and (max-width: 480px) {
+            h1{
+            display: none;
+        
+        }
+        p{
+            display: none;
+        }
+            
+        }         
+</style>
 <body>
-    <h5>Gallery 01</h5>
+
     <div class="container">
-        
-        <div class="image1">
-        
-            <div class="singl_img">
-                <div class="img">
-                    <img src="../images/fox.jpeg" alt="fox image">
-                </div>
+        <div class="singleImg">           
+                <img src="../images/fox.jpeg" alt="fox image">
                 <div class="desc">
-                    <p >Fennec Fox</p>
+                    <h1 >FENNEC FOX</h1>
+                    <p>India</p>
                 </div>
-                
-                <p >Fennec Fox</p>
-
-            </div>
-            
-        </div>    
-            <img src="../images/fox.jpeg" alt="fox image">
-            <img src="../images/baboon.jpeg" alt="baboon image">
-            <img src="../images/whale.jpeg" alt="whale image">
-            <img src="../images/deer.jpeg" alt="deer image">
-        
-    </div>
-
-    
-
-    
-    
-    <!-- <div class="zoomed_image">
-        <div class="img">
-            <img src="../images/fox.jpeg" alt="fox image" usemap="#workmap">
-            
-            <img src="../images/baboon.jpeg" alt="baboon image">
-            <img src="../images/whale.jpeg" alt="whale image">
-            <img src="../images/deer.jpeg" alt="deer image"> 
+               
         </div>
+        <div class="singleImg">           
+            <img src="../images/whale.jpg" alt="baboon image">
+            <div class="desc">
+                <h1 >HUMPABACK WHALE</h1>
+                <p>South Africa</p>
+            </div>
+           
     </div>
-
-    <map name="workmap">
-        <area shape="rect" coords="34,44,270,350" alt="Computer" href="index.html">
-      </map> -->
+    <div class="singleImg">           
+        <img src="../images/baboon.jpeg" alt="whale image">
+        <div class="desc">
+            <h1 >COMMON BLACK BABOON</h1>
+            <p>South Africa</p>
+        </div>
+       
+</div>
+<div class="singleImg">           
+    <img src="../images/deer.jpeg" alt="deer image">
+    <div class="desc">
+        <h1 >SPOTTED DEER</h1>
+        <p>Amazon</p>
+    </div>
+   
+</div>
+    </div>
+    
 </body>
 </html>
