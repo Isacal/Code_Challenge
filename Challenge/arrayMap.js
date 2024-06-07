@@ -26,6 +26,6 @@ function SubarrayWithSumOfTargetFound(arr, target) {
     return false;
 }
 
-const arr1 = [4, 9, 2, 7, 1, 5];
+const arr1 = [4, 2, 7, 1, 9, 5];
 const target1 = 17;
 console.log(SubarrayWithSumOfTargetFound(arr1, target1)); // Output should be true
